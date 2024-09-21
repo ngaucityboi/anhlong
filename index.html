@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-gb">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script>
+function cong()
+{
+var a=parseFloat(document.getElementById("txtA1").value);
+var b=parseFloat(document.getElementById("txtB1").value);
+document.getElementById("txtKQ1").value=a+b;
+}
+function tru()
+{
+var a=document.getElementById("txtA2").value;
+var b=document.getElementById("txtB2").value;
+document.getElementById("txtKQ2").value=a-b;
+}
+function nhan()
+{
+var a=document.getElementById("txtA3").value;
+var b=document.getElementById("txtB3").value;
+document.getElementById("txtKQ3").value=a*b;
+}
+function chia()
+{
+var a=document.getElementById("txtA4").value;
+var b=document.getElementById("txtB4").value;
+document.getElementById("txtKQ4").value=a/b;
+}
+</script>
+</head>
+<body>
+
+
+<p>Các phép toán:</p>
+<p>Phép c&#7897;ng:<input type="text" id="txtA1" name="T2" size="13">+<input type="text" id="txtB1" name="T13" size="12"><input type="button" value=" = " name="B10" onclick="cong()"><input type="text" id="txtKQ1" name="T4" size="12"></p>
+<p>Phép tr&#7915;: <input type="text" id="txtA2" name="T1" size="13">-<input type="text" id="txtB2" name="T5" size="13"><input type="button" value=" = " name="B7" onclick="tru()"><input type="text" id="txtKQ2" name="T6" size="12"></p>
+<p>Phép nhân:<input type="text" id="txtA3" name="T7" size="15">x<input type="text" id="txtB3" name="T8" size="15"><input type="button" value=" = " name="B8" onclick="nhan()"><input type="text" id="txtKQ3" name="T9" size="12"></p>
+<p>Phép chia:<input type="text" id="txtA4" name="T10" size="13">/<input type="text" id="txtB4" name="T11" size="13"><input type="button" value=" = " name="B9" onclick="chia()"><input type="text" id="txtKQ4" name="T12" size="15"></p>
+
+</body>
+
+</html>
