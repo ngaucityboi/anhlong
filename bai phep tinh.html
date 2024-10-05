@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-gb">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>bai 1</title>
+<script>
+function TinhToan(){
+var a=parseFloat(document.getElementById("txtA").value);
+var b=parseFloat(document.getElementById("txtB").value);
+var pt=document.getElementById("pheptoan").value;
+var kq=0;
+   if(pt=="+"){
+   kq=a+b;
+   }
+   else if(pt=="-"){
+   kq=a-b;
+   }
+   else if(pt=="*"){
+   kq=a*b;
+   }
+   else{
+   kq=a/b;
+   }
+   document.getElementById("txtKQ").value=kq;
+   }
+</script>
+</head>
+
+<body>
+
+<form method="POST" action="--WEBBOT-SELF--">
+	<!--webbot bot="SaveResults" U-File="file:///C:/Users/Admin/Documents/My Web Sites/mysite7/_private/form_results.csv" S-Format="TEXT/CSV" S-Label-Fields="TRUE" -->
+	<p><input type="text" name="txtA" size="20">&nbsp;&nbsp;&nbsp;
+	<select size="1" id="pheptoan" name="pt">
+	<option value="+">+</option>
+	<option value="-">-</option>
+	<option value="*">*</option>
+	<option value="/">/</option>
+	</select>&nbsp; <input type="text" name="txtB" size="20">&nbsp;&nbsp;
+	<input type="button" value=" = " name="B1" onclick="TinhToan()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text" name="txtKQ" size="20"></p>
+</form>
+
+</body>
+
+</html>
